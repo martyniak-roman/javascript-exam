@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Name/Value Pair Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="main-title">Test</h1>
+
+    <form id="main-form">
+        <div class="section-group">
+            <label for="input">Name/Value Pair</label>
+            <div class="input-row">
+                <input type="text" id="input" placeholder="Name=Value">
+                <button id="addBtn" type="button">Add</button>
+            </div>
+        </div>
+
+        <div class="section-group">
+            <label for="select">Name/Value Pair List</label>
+            <div class="list-row">
+                <select id="select" size="10" multiple></select>
+                <div class="button-group">
+                    <button id="nameBtn" type="button">Sort by Name</button>
+                    <button id="valueBtn" type="button">Sort by Value</button>
+                    <button id="deleteBtn" type="button">Delete</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
