@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f2f5;
+    padding: 32px 16px;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.user-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.user-card p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.user-card a {
+    align-self: flex-start;
+    padding: 8px 18px;
+    background: #0E64D2;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.user {
+    max-width: 700px;
+    margin: 0 auto 24px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user p {
+    font-size: 16px;
+    color: #333;
+}
+
+.user p span {
+    font-weight: 600;
+    color: #0077cc;
+}
+
+.posts-btn, .comments-btn {
+    display: block;
+    width: 90%;
+    margin: 0 auto 24px;
+    padding: 14px;
+    background: #0E64D2;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.posts-list {
+    width: 90%;
+    margin: 0 auto 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.post-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.post-card h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+}
+
+.posts-list p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #222;
+}
+
+.post-link {
+    align-self: flex-start;
+    padding: 6px 14px;
+    background-color: #0E64D2;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.post-info {
+    max-width: 700px;
+    margin: 0 auto 24px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post-info p {
+    font-size: 16px;
+    color: #333;
+}
+
+.post-info p span {
+    font-weight: 600;
+    color: #555;
+    margin-right: 6px;
+}
+
+.comments-list {
+    width: 90%;
+    margin: 0 auto 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.comment-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.comment-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+
+.comment-card  {
+    font-size: 13px;
+    color: #0077cc;
+}
+
+.comment-email {
+    color: #0e64D2;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.comment-card {
+    font-size: 13px;
+    color: #666;
+    flex: 1;
+}
+
+.comment-body {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+}
