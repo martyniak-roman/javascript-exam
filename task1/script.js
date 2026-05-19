@@ -12,13 +12,7 @@ const isAlphanumeric = (str) => {
         return false;
     }
 
-    const allowedChars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    for (let i = 0; i < str.length; i++) {
-        if (allowedChars.indexOf(str[i]) === -1){
-            return false;
-        }
-    }
-    return true;
+    return /^([a-z0-9]+)$/i.test(str);
 };
 
 const render = () => {
@@ -56,7 +50,7 @@ nameBtn.addEventListener("click", () => {
 })
 
 valueBtn.addEventListener("click", () => {
-    items.sort((a, b) => a.value.localeCompare(b.value));
+    items.sort((a, b) => a.value.localeCompare(b.value, undefined, {numeric: true}));
     render();
 })
 

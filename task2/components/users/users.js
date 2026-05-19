@@ -9,7 +9,7 @@ const container = document.querySelector('.app')
                 const userElement = document.createElement('p')
                 userElement.textContent = `${id} : ${name}`
                 const link = document.createElement('a')
-                link.href = `user-details.html?id=${id}`
+                link.href = `./user-details.html?id=${id}`
                 link.textContent = 'View More'
                 link.target = '_blank'
 
